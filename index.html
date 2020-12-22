@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
+        <title>The FutureDev</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Assets/stylesheet/main.css">
+    </head>
+    <body >
+        <header class="parallax">
+            <div class="container ">
+              <nav class="navbar navbar-expand-lg ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav nav-pills py-3 mr-auto">  
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">Active</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                </div>
+              </nav>
+
+                <div class="row">
+                  <div class="col">
+
+                  </div>
+                  <div class="col">
+                      <img class="img-fluid " src="Assets/Photo/—Pngtree—students study hard to read_5471575.png" alt="image of child">
+                  </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container py-5">
+          <p >
+            Multiple column classes
+Selecting transcript lines in this section will navigate to timestamp in the video
+- [Instructor] As you work on more complex projects, you may want to modify the layout depending on the width of the screen or the device. Now Bootstrap lets you add multiple classes to rows and columns to control how the grid works in interesting ways. Let's take a look at how that works. You have three ways that you can control the layout in Bootstrap. First is the container class, which has some responsive options. So you can specify that the container do different things at different sizes. You can also do this with the row cols option that you can add to the row class, so you can specify that a layout works differently at different break points and shows up different number of items underneath each of the columns. You can also do that individually in each of the columns by specifying a break point and then how much of the grid spacing you want to take up in your project. So let's see how this works. Here we have something similar to what we were working on in the last video. We have a div with a container, and then we have a single row, and then we have a series of section tags here with a column class for each of the sections. So the first way that we control things is by deciding whether or not we want to use the regular or the fluid container. The regular container has different break points and when we get to a certain width, it's going to snap the layout into a position. You can see that right here as we make the window bigger, it's going to do that. Now we can also use the container fluid option, which gives you a completely fluid container that always adjusts to the width of the device and will always go all the way to the edge, plus the little bit of padding that you get around each of the edges, you can see that here. And then you can also add a container with a break point, so this will determine when the layout will be responsive, or adjust to the full width of the browser, and when it will adjust to the different break points. So let's say we do an container-lg, slash, and we don't want to do fluid here, just container-lg, so now when I get to the large break point, it's going to be adjusting to the break points at the large and the extra large break point, but before then, it's going to be fully responsive as if it were a container fluid. You can see that it's always going to try to adjust 'til it can't fit anymore things and then it takes anything that gets pushed over to the next line and tries to fit the layout with those elements. So let's go back into a regular container and you can see that now we can fit four items up here and then we have these two items. The other way to control things is by adding some of the row cols classes, so let's go ahead and do that. We can say row and then cols, and then add a number here, so we can say we always want two elements to be on this layout. So now you can see that we have two elements here and it doesn't matter what width I make the browser, there's always going to be two elements on that layout. And if we want to, let's go ahead and do three elements here. So if we do three, you'll notice that it's always going to do three elements and we can keep on going, let's add four, just to show you that if you do something where it doesn't have any more content for the spots, it's going to just leave those blank, so it's not going to adjust them to the width of the sort of remainder of the room that you have, it's just going to always try to do that number of elements. Now, you can do this on a break point by break point basis by saying something like on a small break point, I want to just have two items in the layout, so when we get to the small break point, we're going to have two items, and notice that if I get any smaller then that, I actually end up with a normal layout here. So I could also type in a row cols and then just put a number as well. So now, it's always going to have two or you could say anything smaller than the small break point, I want to have just one item, and then when I get to a bigger width device or screen, then I want two items and you can continue that through the different break points. So, let's do three at the md breakpoint and now when I make this bigger, you can see that at this break point, it has three items, then two, then one, and you can keep on going if you want to and that's a shortcut to control how things look at different break points. Let's go and get rid of these, and show you that you can also do this with columns. So we're back to what we were at the beginning and right now, we can specify that each of these items is going to take up a certain number of columns, let's go ahead and take all of them and I'm using my editor has a feature that I can hit Command D and select anything that has the text COL using Visual Studio Code here. And I can say that I want each of these items to take up six of the 12 units. So this requires a little bit more thinking because you have to think of terms of the 12 available slots. So instead of doing row cols two here, I'm saying I want you to take six of the 12 spots. It looks similar to what we did with row cols two and it's also going to persist across the different sort of break points, but I can do something more interesting here, so I can say well, I really want one of these sides to take up four of the units and then this one will take up eight of the units, so this should amount to 12 and so now I have a layout that has one side be bigger than the other side and it's just, if it's more than 12, then it'll just go to the next one and try to fit whatever remains with the available space. So this also gives you a little bit of extra control, but if we want to, let's go ahead and switch them back to six and six, we can control this on a per item basis. And again, I'm going to select all of them so all these COL sixes. So what I could do here is say okay, well at the small break point, I want you to use six columns and then, at the medium break point, so I'll do medium md and I want you to use four columns and then specify that at the large break point, I want you to use three columns and then for the extra large break point, I want you to use two of the 12 units. So, let's go ahead and take a look at how that works. So at the small break point, so normally, they're going to take up the default width of the browser and when I get to the small break point, it's going to take six of the 12 units, you can see now that they're going up, two up on the available space, and then when I get to the medium break point, it's going to take four of the units, so four times three is 12, and then as I keep on going, it's going to do now at the large break point, three of the units, which again three times four is 12. So I think that if you use multiple rows, it makes a little more sense, sometimes I get confused when I want to do a layout like this because I want to make sure that they appear four up on the layout, so I need to specify three units of the 12 units. So I think that row cols is a little bit easier, but using multiple columns like this is perfectly fine and maybe a little more flexible than using row cols, but you have all those three things that you can play with here, the container, the row, row cols with the break points, in addition to specific columns and what they do at specific break points.
+          </p>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
